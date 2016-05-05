@@ -1,0 +1,34 @@
+{
+  "name": "mytts",
+  "version": "0.1.0",
+  "description": "A sample nodejs app for Bluemix that use the Text to Speech service",
+  "dependencies": {
+    "body-parser": "~1.14.1",
+    "express": "~4.13.3",
+    "express-rate-limit": "^2.0.2",
+    "express-secure-only": "^0.2.1",
+    "helmet": "^1.3.0",
+    "watson-developer-cloud": "^1.0.6",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
+    "multer": "^1.1.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://3hdeng@github.com/3hdeng/mytts.git"
+  },
+  "author": "3h deng",
+  "contributors": [
+    {
+      "name": "3h deng",
+      "email": "3hdeng@gmail.com"
+    }
+  ],
+  "license": "Apache-2.0",
+   "scripts": {
+    "start": "node app.js"
+  }
+}

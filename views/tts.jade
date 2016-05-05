@@ -1,0 +1,59 @@
+extends layout
+
+block append head
+    meta( name="ttshead", content="try bluemix tts service" )
+    meta( http-equiv="X-UA-Compatible" content="IE=edge" )
+    meta( name="viewport" content="width=device-width, initial-scale=1" )
+    link( href="/css/watson-bootstrap-style.css" rel="stylesheet",  type="text/css" )
+    link( href="/css/style.css" rel="stylesheet",  type="text/css" )
+    link( href="/css/photon.min.css" rel="stylesheet",  type="text/css" )
+    link( href="/css/my.css" rel="stylesheet",  type="text/css" )
+    script(src="https://code.jquery.com/jquery-1.11.3.min.js")
+    script.
+        console.log("beginning of log?");
+    script.
+        if (typeof jQuery == 'undefined') {
+            console.log("still need document.write even when the page is loaded by webView");
+            document.write('<script type="text/javascript" src="/js/jquery-1.11.3.min.js"><\/script>');}
+    script( src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" )
+    script( src="/js/constants.js" )
+    script( src="/js/mytts.js" )
+    //- cannot have space line
+    //- script( src="https://code.jquery.com/jquery-1.11.3.min.js" )
+    //- script() window.$ = window.jQuery = require(__dirname + '/../public/js/jquery-1.11.3.min.js')
+
+
+block content
+ div(class="window mywindow")
+  header(class="toolbar toolbar-header")
+    h1(class="title") Header
+    div( class="toolbar-actions")
+       div( class="btn-group")
+           button( class="btn btn-default mybutton")
+              span( class="icon icon-home")
+           button( class="btn btn-default")
+              span( class="icon icon-folder")
+                                                
+
+  #form-display
+    div(class="mybigblock")
+     form(role="form", id="frm1", action="/api/synthesize", method="post" onsubmit="disableFormSubmit()")
+         div(class="form-div")
+          label(for="txt1") Input the text for TextToSpeech
+          input(type="text", name="txt1", id="txt1")
+          input(type="text", name="voicekind", id="voicekind", value="")
+          label 
+             input(type="checkbox", name="download", id="download")
+             = " download speech?" 
+          div()          
+          button(id="btnSubmit" class="btn btn-default mybutton") 
+            span(class="icon icon-megaphone")
+     
+     #div-alink
+     a(href="", id="myalink", name="myalink" class="myhide") myalink for xhr dnload
+
+  footer(class="toolbar toolbar-footer")
+     div Copyright © 3hd.me #{+new Date().getFullYear()}  
+     a(href='/page?name=about') About 
+     | | 
+     a(href='/page?name=contact') Contact Us

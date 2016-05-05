@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  #test
+    h1= json1
+    h2= json2 
+   p #{json1}
+  #wrapper
+    #json-data
+        p #{jsondata.mydomain}
+        p #{jsondata.mycert}
+        for x in jsondata
+            p #{x}
+    #display
+        #login        
+            form(method='post')
+                | Enter your name if you want to post an article
+                div
+                    input(type='text', name='username')
+                    input(type='submit', value='Log In')
+        
+    #footer
+        div Copyright © MEAN Stack #{+new Date().getFullYear()}  
+        a(href='/page?name=about') About 
+        | |  
+        a(href='/page?name=contact') Contact Us

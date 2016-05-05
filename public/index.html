@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text to Speech</title>
+    <link href="css/watson-bootstrap-style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+  </head>
+  <body>
+
+   <!-- main content-->
+    <div class="container">
+      <form class="form-horizontal">
+
+      <!-- First section -->
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <h2>Input Text</h2>
+        </div><!-- .col-lg-12 -->
+ <textarea id="textArea" spellcheck="false">Enter up to 1000 characters...</textarea>     </div><!-- /.row -->
+</form>
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <button type=button class="download-button btn btn-block">
+            Download
+          </button>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <button type=button class="speak-button btn btn-secondary">
+            Speak&emsp;
+            <span>(Only in Chrome & Firefox)</span>
+          </button>
+        </div>
+
+      </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="audioParent">
+            <audio class="audio">
+            Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div><!-- row -->
+
+    </div><!-- /.container -->
+
+    <!-- js files -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/demo.js"></script>
+    <script>
+    </script>
+
+  </body>
+
+</html>

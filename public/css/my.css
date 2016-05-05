@@ -1,0 +1,17 @@
+.mywindow {
+  width:400px;
+}
+.mybigblock {
+    border: 1px solid red;
+    background-color: yellow;
+    padding: 20px 50px 30px 50px;
+}
+
+.mybutton { 
+  width:30px;
+}
+
+.myhide {
+  visibility:hidden;
+}
+
