@@ -2,3 +2,9 @@ language: node_js
 
 node_js:
       - "4"
+
+deploy:
+           skip_cleanup: true
+           - provider: heroku
+             api_key: "91633db7-a49c-484d-af1d-e294fd6fbffe"
+
