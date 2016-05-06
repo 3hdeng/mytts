@@ -34,6 +34,6 @@
   "license": "Apache-2.0",
    "scripts": {
     "start": "node app.js",
-    "test":"mocha --reporter spec test"
-  }
+    "test":"mocha --reporter spec test.js"
+
 }
