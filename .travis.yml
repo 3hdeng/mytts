@@ -5,6 +5,7 @@ node_js:
 
 deploy:
        - provider: heroku
+         app: mytts
          api_key: "91633db7-a49c-484d-af1d-e294fd6fbffe"
          skip_cleanup: true
 

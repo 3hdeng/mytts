@@ -16,6 +16,10 @@
     "multer": "^1.1.0",
     "serve-favicon": "~2.3.0"
   },
+   "devDependencies": {
+           "mocha": "^1.17.1",
+           "request": "^2.65.0"
+             }, 
   "repository": {
     "type": "git",
     "url": "https://3hdeng@github.com/3hdeng/mytts.git"
@@ -29,6 +33,7 @@
   ],
   "license": "Apache-2.0",
    "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test":"mocha --reporter spec test"
   }
 }
