@@ -35,5 +35,5 @@
    "scripts": {
     "start": "node app.js",
     "test":"mocha --reporter spec test.js"
-
+   }
 }
